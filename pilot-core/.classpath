@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/javax/mail/mail/1.4.1/mail-1.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/jcr/jcr/2.0/jcr-2.0.jar" sourcepath="M2_REPO/javax/jcr/jcr/2.0/jcr-2.0-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.scheduler/2.3.4/org.apache.sling.commons.scheduler-2.3.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/quartz-scheduler/quartz/2.1.1/quartz-2.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.4.3/slf4j-api-1.4.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/cq/cq-search/5.5.4/cq-search-5.5.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/cq/cq-statistics/5.4.0/cq-statistics-5.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/cq/cq-commons/5.6.2/cq-commons-5.6.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-email/1.2/commons-email-1.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/jackrabbit-jcr-commons/2.2.0/jackrabbit-jcr-commons-2.2.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/felix/org.apache.felix.scr/1.6.0/org.apache.felix.scr-1.6.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/felix/org.apache.felix.scr.annotations/1.4.0/org.apache.felix.scr.annotations-1.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/osgi_R4_core/1.0/osgi_R4_core-1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/osgi_R4_compendium/1.0/osgi_R4_compendium-1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-simple/1.6.4/slf4j-simple-1.6.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.osgi/2.2.0/org.apache.sling.commons.osgi-2.2.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.api/2.2.0/org.apache.sling.api-2.2.0.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.api/2.2.0/org.apache.sling.api-2.2.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/cq/cq-replication/5.4.2/cq-replication-5.4.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/jcr/vault/com.day.jcr.vault/2.3.0/com.day.jcr.vault-2.3.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.event/3.1.4/org.apache.sling.event-3.1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/cq/wcm/cq-wcm-api/5.6.2/cq-wcm-api-5.6.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.jcr.resource/2.2.2/org.apache.sling.jcr.resource-2.2.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.jcr.api/2.1.0/org.apache.sling.jcr.api-2.1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/jackrabbit-api/2.3.6/jackrabbit-api-2.3.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/4.8.2/junit-4.8.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/easymock/easymock/3.0/easymock-3.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/objenesis/objenesis/1.2/objenesis-1.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/easymock/easymockclassextension/3.0/easymockclassextension-3.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/powermock/powermock-module-junit4/1.4.7/powermock-module-junit4-1.4.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/powermock/powermock-module-junit4-common/1.4.7/powermock-module-junit4-common-1.4.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/powermock/powermock-core/1.4.7/powermock-core-1.4.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/powermock/powermock-reflect/1.4.7/powermock-reflect-1.4.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/javassist/javassist/3.14.0-GA/javassist-3.14.0-GA.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/powermock/powermock-api-easymock/1.4.7/powermock-api-easymock-1.4.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/powermock/powermock-api-support/1.4.7/powermock-api-support-1.4.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.junit.core/1.0.8/org.apache.sling.junit.core-1.0.8.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.json/2.0.6/org.apache.sling.commons.json-2.0.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.junit.remote/1.0.8/org.apache.sling.junit.remote-1.0.8.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.tools/1.0.6/org.apache.sling.testing.tools-1.0.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient/4.1/httpclient-4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.2/commons-codec-1.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.junit.scriptable/1.0.8/org.apache.sling.junit.scriptable-1.0.8.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/cq/cq-polling-importer/5.6.2/cq-polling-importer-5.6.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/cq/workflow/cq-workflow-api/5.5.0/cq-workflow-api-5.5.0.jar"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

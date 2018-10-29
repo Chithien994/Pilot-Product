@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="company-core/src/main/java"/>
+	<classpathentry kind="lib" path="company-core/target/company-core-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="company-ui/src/main/content/jcr_root/apps/company/install/company-core-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="company-ui/target/classes/apps/company/install/company-core-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="company-ui/target/company-ui-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="company-core/target/classes"/>
+</classpath>
