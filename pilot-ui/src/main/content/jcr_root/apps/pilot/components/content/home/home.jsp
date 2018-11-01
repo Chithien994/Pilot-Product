@@ -1,4 +1,5 @@
 <%@include file="/libs/foundation/global.jsp"%>
+<cq:includeClientLib categories="pilot-v1-clientlibs"/>
 <div class="container" style="background: rgba(0,123,255,.25); border-radius: 5px;">
 	<div class="row">
 		<div class="col-md-12">

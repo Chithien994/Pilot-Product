@@ -16,6 +16,7 @@ import com.day.cq.search.QueryBuilder;
 /**
  * The servlet is used to add, edit, delete and search product
  * @author Thien
+ * @since 2018/10/24
  * 
  */
 @SlingServlet(paths = "/bin/servlet/product", methods = { "GET", "POST", "DELETE", "PUT" })
@@ -24,8 +25,6 @@ public class ProductServlet extends BaseServlet{
 	@Reference
 	private QueryBuilder builder;
 	
-	private static final String SEARCH = "search";
-
 	private static final long serialVersionUID = -7054668461323865426L;
 	
 	private ProductDao productDao = new ProductDao();
@@ -37,7 +36,7 @@ public class ProductServlet extends BaseServlet{
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 		response.setHeader("Content-Type", "application/json");
 		JSONObject object;
-		if (request.getParameter(SEARCH) != null) {
+		if (request.getParameter(Product.ID) == null) {
 			object = productDao.getProducts(request, builder);
 		}else {
 			object = productDao.getProductById(request);
@@ -53,7 +52,9 @@ public class ProductServlet extends BaseServlet{
 	protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 		response.setHeader("Content-Type", "application/json");
 		JSONObject object = null;
-		if (request.getParameter(Product.LIST_PRODUCT) == null){
+		if (request.getParameter(Product.LIST_ID) != null){
+			object = productDao.deleteProducts(request);
+		}else {
 			object = productDao.addProduct(request);
 		}
 		object = checkObject(object);
@@ -67,7 +68,8 @@ public class ProductServlet extends BaseServlet{
 	protected void doDelete(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 		response.setHeader("Content-Type", "application/json");
 		JSONObject object = null;
-		object = checkObject(productDao.deleteProduct(request));
+		String productID = request.getParameter(Product.ID);
+		object = checkObject(productDao.deleteProduct(request, productID));
 		response.getWriter().print(object.toString());
 	}
 
@@ -82,5 +84,4 @@ public class ProductServlet extends BaseServlet{
 		object = checkObject(productDao.editProduct(request));
 		response.getWriter().print(object.toString());
 	}
-	
 }

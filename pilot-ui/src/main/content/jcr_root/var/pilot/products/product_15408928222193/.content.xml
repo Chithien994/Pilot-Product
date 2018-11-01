@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    company="Company A"
+    description="1111111"
+    id="{Long}15408928222193"
+    name="Product 6"
+    price="{Long}111111111"
+    quantity="{Long}12"/>

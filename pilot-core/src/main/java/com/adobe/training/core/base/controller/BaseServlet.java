@@ -3,9 +3,11 @@ package com.adobe.training.core.base.controller;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.apache.sling.commons.json.JSONException;
 import org.apache.sling.commons.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+/**
+ * Base Servlet
+ * @author Thien
+ * @since 2018/10/24
+ */
 
 public class BaseServlet extends SlingAllMethodsServlet {
 	
@@ -15,9 +17,7 @@ public class BaseServlet extends SlingAllMethodsServlet {
 	public static final String EMPTY = "empty";
 	public static final String SUCCESSED = "successed";
 	private static final long serialVersionUID = 5380306835770821735L;
-	private final Logger LOG = LoggerFactory.getLogger(BaseServlet.class);
 	
-	@SuppressWarnings("unused")
 	protected JSONObject checkObject(JSONObject object) {
 		if(object==null) {
 			try {

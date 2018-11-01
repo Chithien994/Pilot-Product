@@ -1,0 +1,87 @@
+.search-style{
+        padding: 8px 10px;
+    margin-bottom: 16px;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.button {
+    font-size: 13px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    background: #fff;
+    box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset;
+    cursor: pointer;
+    height: 24px;
+    line-height: 1;
+    padding: 4px 8px !important;
+    margin: 0 !important;
+    color: #333;
+}
+
+.input, .button {
+    margin: 2px 0;
+    padding: 2px 3px;
+    vertical-align: middle;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.actions {
+    padding: 10px;
+    background: #fff;
+    border-top: none;
+    border-bottom: none;
+    line-height: 24px;
+    color: #999;
+}
+
+.deletelink {
+    background: #ba2121;
+    border: none;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.button-default {
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    background: #417690;
+}
+
+.items-center{
+  display: flex;
+  align-items: center;
+}
+.page-layout {
+    width: 100%;
+    text-align: right;
+}
+
+.icon-delete-item{
+	color: #ba2121;
+    font-size: large;
+    padding:5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.icon-delete-item:focus, .icon-delete-item:hover {
+	color: red;
+}
+
+.detailProduct{
+    color: #447e9b;
+    font-weight:500;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.detailProduct:focus, .detailProduct:hover {
+    color: #036;
+}

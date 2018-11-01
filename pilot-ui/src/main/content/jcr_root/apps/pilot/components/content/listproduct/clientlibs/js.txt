@@ -1,4 +1,0 @@
-#base=scripts
-
-pagination.min.js
-listproduct.js

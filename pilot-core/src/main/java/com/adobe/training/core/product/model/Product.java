@@ -1,12 +1,7 @@
 package com.adobe.training.core.product.model;
 
 import javax.jcr.Node;
-import javax.jcr.RepositoryException;
 import javax.jcr.Session;
-import javax.jcr.ValueFormatException;
-import javax.jcr.lock.LockException;
-import javax.jcr.nodetype.ConstraintViolationException;
-import javax.jcr.version.VersionException;
 
 import org.apache.sling.commons.json.JSONObject;
 
@@ -15,10 +10,11 @@ import com.adobe.training.core.base.model.BaseModel;
 /**
  * Model
  * @author Thien
+ *@since 2018/10/24
  *
  */
 public class Product extends BaseModel {
-	public static final String LIST_PRODUCT = "listProduct";
+	public static final String LIST_ID = "list_id";
 	//Path
 	public static final String PARENT_PARENT_PATH 	= "/var/pilot";
 	public static final String PARENT_PATH 			= "/var/pilot/products";
@@ -32,8 +28,6 @@ public class Product extends BaseModel {
 	public static final String DESCRIPTION 	= "description";
 	public static final String PRODUCT_ID 	= "productID";
 	
-	private Node node;
-	private Session session;
 	
 	public Product(Node node, Session session) {
 		this.node = node;
@@ -45,105 +39,49 @@ public class Product extends BaseModel {
 	}
 	
 	public String getId() {
-		try {
-			return node.getProperty(ID).getString();
-		} catch (Exception e) {
-			
-		}
-		return "";
+		return getStringProperty(ID);
 	}
+	
 	public void setId(String id) {
-		try {
-			node.setProperty(ID, Long.parseLong(id));
-			session.save();
-		} catch (Exception e) {
-			
-		}
+		setLongProperty(ID, Long.parseLong(id));
 	}
 	
 	public String getName() {
-		try {
-			return node.getProperty(NAME).getString();
-		} catch (Exception e) {
-			
-		}
-		return "";
+		return getStringProperty(NAME);
 	}
+	
 	public void setName(String name) {
-		try {
-			node.setProperty(NAME, name);
-			session.save();
-		} catch (Exception e) {
-			
-		}
+		setStringProperty(NAME, name);
 	}
 	
 	public String getQuantity() {
-		try {
-			return node.getProperty(QUANTITY).getString();
-		} catch (Exception e) {
-			
-		}
-		return "";
+		return getStringProperty(QUANTITY);
 	}
 	public void setQuantity(String quantity) {
-		try {
-			node.setProperty(QUANTITY, Integer.parseInt(quantity));
-			session.save();
-		} catch (Exception e) {
-			
-		}
+		setIntProperty(QUANTITY, Integer.parseInt(quantity));
 	}
 	
 	public String getPrice() {
-		try {
-			return node.getProperty(PRICE).getString();
-		} catch (Exception e) {
-			
-		}
-		return "";
+		return getStringProperty(PRICE);
 	}
+	
 	public void setPrice(String price) {
-		try {
-			node.setProperty(PRICE, Long.parseLong(price));
-			session.save();
-		} catch (Exception e) {
-			
-		}
+		setLongProperty(PRICE, Long.parseLong(price));
 	}
 	
 	public String getCompany() {
-		try {
-			return node.getProperty(COMPANY).getString();
-		} catch (Exception e) {
-			
-		}
-		return "";
+		return getStringProperty(COMPANY);
 	}
 	public void setCompany(String company) {
-		try {
-			node.setProperty(COMPANY, company);
-			session.save();
-		} catch (Exception e) {
-			
-		}
+		setStringProperty(COMPANY, company);
 	}
 	
 	public String getDescription() {
-		try {
-			return node.getProperty(DESCRIPTION).getString();
-		} catch (Exception e) {
-			
-		}
-		return "";
+		return getStringProperty(DESCRIPTION);
 	}
+	
 	public void setDescription(String description) {
-		try {
-			node.setProperty(DESCRIPTION, description);
-			session.save();
-		} catch (Exception e) {
-			
-		}
+		setStringProperty(DESCRIPTION, description);
 	}
 	
 	/**

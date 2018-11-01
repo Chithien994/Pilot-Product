@@ -1,0 +1,9 @@
+#base=scripts
+
+base.js
+nav/top-nav.js
+products/products.js
+products/add.js
+products/pagination.min.js
+products/list.js
+products/reports.js

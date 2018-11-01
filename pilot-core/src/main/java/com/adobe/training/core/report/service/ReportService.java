@@ -22,7 +22,6 @@ import org.apache.felix.scr.annotations.PropertyUnbounded;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.jackrabbit.commons.JcrUtils;
-import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.commons.osgi.PropertiesUtil;
 import org.apache.sling.commons.scheduler.Scheduler;
@@ -37,7 +36,12 @@ import com.day.cq.search.PredicateGroup;
 import com.day.cq.search.QueryBuilder;
 import com.day.cq.search.result.SearchResult;
 import com.day.cq.search.Query;
-
+/**
+ * Used to export file report csv
+ * @author Thien
+ *@since 2018/10/24
+ *
+ */
 @Component(immediate = true, metatype = true,
 label = "Report Service")
 @Service(value = Runnable.class)
@@ -186,9 +190,5 @@ public class ReportService implements Runnable {
 			LOGGER.error("Cannot get node", e);
 		}
 		return productsList;
-	}
-	private Session loginService() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 /**
  * The controller is used to get list companies
  * @author Thien
- * 
+ * @since 2018/10/24
  */
 public class CompanyController {
 

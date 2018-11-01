@@ -1,3 +1,0 @@
-#base=scripts
-
-addproduct.js

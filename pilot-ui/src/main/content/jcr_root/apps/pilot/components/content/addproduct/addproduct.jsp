@@ -1,10 +1,9 @@
 <%@include file="/libs/foundation/global.jsp"%>
-<cq:includeClientLib categories="pilot-clientlibs" />
-<cq:includeClientLib categories="addproduct-clientlibs" />
+<cq:includeClientLib categories="pilot-v1-clientlibs"/>
 <jsp:useBean id="companyController" class="com.adobe.training.core.product.controller.CompanyController">
 	<jsp:setProperty name="companyController" property="resource" value="<%= resource %>"/>
 </jsp:useBean>
-<c:set var="companies" value="${companyController.companiesList}"/>
+<c:set var="companies" value="${companyController.companiesList}" />
 <div class="container">
     <form class="form-horizontal" action="#">
         <div class="card">
@@ -68,12 +67,12 @@
             <div class="card-footer">
                 <div class="row">
                     <div class="col-md-6">
-                        <button class="btn btn-success" onclick="window.location.href=''">Back</button>
+                        <button class="btn btn-default" onclick="goBack()">Back</button>
                     </div>
                     <div class="col-md-6 float-right">
                         <div class="float-right">
-                            <button type="button" class="btn btn-default" onclick="resetform()">Clear</button>
-                            <button type="button" class="btn btn-primary" onclick="addproduct()">Add</button>
+                            <button type="button" class="btn btn-default" onclick="clearAllText()">Clear</button>
+                            <button type="button" class="btn button-default" onclick="addproduct()">Add</button>
                         </div>
                     </div>
                 </div>
