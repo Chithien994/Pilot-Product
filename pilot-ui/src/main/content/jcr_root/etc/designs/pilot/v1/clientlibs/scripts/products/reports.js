@@ -33,18 +33,18 @@ function setReportNumberPage(count, offset, limit){
 }
 
 function reportSearch(url){
-    var keywork = $.trim($('#report-key-work').val());
-    getReport(url, keywork);
+    var key_word = $.trim($('#report-key-word').val());
+    getReport(url, key_word);
 }
 
-function getReport(url, keywork) {
+function getReport(url, key_word) {
     console.log(url);
 	$.ajax({
 		type : "GET",
 		dataType : "json",
 		url : url,
         data : {
-			keywork : keywork
+			key_word : key_word
 		},
 		success : function(data) {
             console.log(data);

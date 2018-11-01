@@ -8,7 +8,7 @@ import org.apache.sling.api.SlingHttpServletRequest;
  *
  */
 public interface BaseIRequest {
-	public static final String KEY_WORK = "keywork";
+	public static final String KEY_WORD = "key_word";
 	public static final String LIMIT = "limit";
 	public static final String OFFSET = "offset";
 	public static final String RESULT = "result";
@@ -16,7 +16,7 @@ public interface BaseIRequest {
 	public static final String ID = "id";
 	
 	public String getId(SlingHttpServletRequest request);
-	public String getKeyWork(SlingHttpServletRequest request);
+	public String getKeyWord(SlingHttpServletRequest request);
 	public Integer getLimit(SlingHttpServletRequest request);
 	public Integer getOffSet(SlingHttpServletRequest request);
 }

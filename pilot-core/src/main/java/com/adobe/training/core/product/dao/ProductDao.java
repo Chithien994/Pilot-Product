@@ -145,20 +145,20 @@ public class ProductDao extends ProductRequest{
 
 		// Get list products by key work and price
 		List<Object> products = new ArrayList<Object>();
-		String keyWork = getKeyWork(request);
+		String keyWord = getKeyWord(request);
 		
 		criteriaMap.put("path", Product.PARENT_PATH);
 		criteriaMap.put("type", Product.TYPE_NT_UNSTRUCTURED);
 		criteriaMap.put("group.and", "true");
 		criteriaMap.put("1_group.p.or", "true");
 		criteriaMap.put("1_group.1_property", Product.NAME);
-		criteriaMap.put("1_group.1_property.value", "%" + keyWork + "%");
+		criteriaMap.put("1_group.1_property.value", "%" + keyWord + "%");
 		criteriaMap.put("1_group.1_property.operation", "like");
 		criteriaMap.put("1_group.2_property", Product.COMPANY);
-		criteriaMap.put("1_group.2_property.value", "%" + keyWork + "%");
+		criteriaMap.put("1_group.2_property.value", "%" + keyWord + "%");
 		criteriaMap.put("1_group.2_property.operation", "like");
 		criteriaMap.put("1_group.3_property", Product.DESCRIPTION);
-		criteriaMap.put("1_group.3_property.value", "%" + keyWork + "%");
+		criteriaMap.put("1_group.3_property.value", "%" + keyWord + "%");
 		criteriaMap.put("1_group.3_property.operation", "like");
 		criteriaMap.put("2_group.rangeproperty.property", "price");
 		criteriaMap.put("2_group.rangeproperty.lowerBound", getMinPrice(request));

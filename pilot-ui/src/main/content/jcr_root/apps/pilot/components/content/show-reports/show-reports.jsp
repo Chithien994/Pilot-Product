@@ -7,7 +7,7 @@
             <form class="form-inline search-style">
                 <div class="form-group">
                     <label class="fa fa-search"></label> 
-                    <input type="text" class="input ml-sm-2" placeholder="Search" title="Input Date (yyyy-mm-dd)" id="report-key-work">
+                    <input type="text" class="input ml-sm-2" placeholder="Search" title="Input Date (yyyy-mm-dd)" id="report-key-word">
                 </div>
                 <div class="form-group ml-sm-3">
                     <button type="button" class="button report-search">Search</button>

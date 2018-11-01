@@ -22,19 +22,30 @@ import com.day.cq.search.Query;
 import com.day.cq.search.QueryBuilder;
 import com.day.cq.search.result.SearchResult;
 
+/**
+ * 
+ * @author Thien
+ *
+ */
 public class ReportDao extends ReportRequest{
+	/**
+	 * Used to get products by key word
+	 * @param SlingHttpServletRequest
+	 * @param QueryBuilder
+	 * @return JSONObject
+	 */
 	public JSONObject getReport(SlingHttpServletRequest request, QueryBuilder builder) {
 		ResourceResolver resourceResolver = request.getResourceResolver();
 		Session session = resourceResolver.adaptTo(Session.class);
 		Map<String, String> criteriaMap = new HashMap<String, String>();
 		List<Object> reports = new ArrayList<Object>();
-		String keyWork = getKeyWork(request);
+		String keyWord = getKeyWord(request);
 		
 		criteriaMap.put("path", Product.REPORT_PATH);
 		criteriaMap.put("property", "jcr:primaryType");
 		criteriaMap.put("property.value", "nt:file");
 		criteriaMap.put("1_property", BaseModel.CREATED);
-		criteriaMap.put("1_property.value", "%" + keyWork + "%");
+		criteriaMap.put("1_property.value", "%" + keyWord + "%");
 		criteriaMap.put("1_property.operation", "like");
 		criteriaMap.put("orderby", "@jcr:created");
 		criteriaMap.put("orderby.sort", "desc");

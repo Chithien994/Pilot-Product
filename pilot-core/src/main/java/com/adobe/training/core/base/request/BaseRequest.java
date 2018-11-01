@@ -23,9 +23,9 @@ public class BaseRequest implements BaseIRequest{
 	}
 
 	@Override
-	public String getKeyWork(SlingHttpServletRequest request) {
+	public String getKeyWord(SlingHttpServletRequest request) {
 		// TODO Auto-generated method stub
-		return request.getParameter(BaseIRequest.KEY_WORK);
+		return request.getParameter(BaseIRequest.KEY_WORD);
 	}
 
 	@Override

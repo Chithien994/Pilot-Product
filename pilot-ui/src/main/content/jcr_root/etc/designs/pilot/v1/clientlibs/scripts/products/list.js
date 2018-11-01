@@ -103,20 +103,20 @@ function deleteProduct(item) {
 <!--Search and get products.-->
 
 function search(url){
-    var keywork = $.trim($('#keywork').val());
+    var key_word = $.trim($('#key-word').val());
     var price_min = $('#price-min').val();
     var price_max = $('#price-max').val();
-    getProduct(url, keywork, price_min, price_max);
+    getProduct(url, key_word, price_min, price_max);
 }
 
-function getProduct(url, keywork, price_min, price_max) {
+function getProduct(url, key_word, price_min, price_max) {
     console.log(url);
 	$.ajax({
 		type : "GET",
 		dataType : "json",
 		url : url,
 		data : {
-			keywork : keywork,
+			key_word : key_word,
 			price_min : price_min,
 			price_max : price_max
 		},
